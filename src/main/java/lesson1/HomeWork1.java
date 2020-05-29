@@ -9,6 +9,7 @@ public class HomeWork1 {
         System.out.println(isNegative(-1));
         greetings("Vladimir", "Maslov");
         leapYear(2020);
+
     }
 
     /* 1. Создать переменные всех пройденных типов данных и инициализировать их значения.
@@ -82,9 +83,13 @@ public class HomeWork1 {
     public static void leapYear(int x) {
 
         if (x % 4 == 0 && x % 100 != 0 || x % 400 == 0) {
-            System.out.println("Год является Високосным");
+            System.out.println( x + "Год является Високосным");
         } else {
-            System.out.println("Год не является Високосным");
+            System.out.println( x + "Год не является Високосным");
         }
+
     }
+
+
+
 }
