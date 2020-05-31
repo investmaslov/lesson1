@@ -29,16 +29,16 @@ public class HomeWork3 {
      //   System.out.println("Программа загадала число - " + x);
         System.out.println("   ");
         for (int i = 0; i < 3; i++) {
-            System.out.println("Введите свое число ");
+            System.out.println("Введите свое число: ");
             Scanner sc = new Scanner(System.in);
             int a = sc.nextInt();
             if (a == x) {
                 System.out.println(" Ура ты угадал программа загадала " + x + " " + "Твой результат такой же -  " + a);
                 newStartRandomGame();
             } else if (a < x) {
-                System.out.println("Неправильно число кторое вы указали МЕНЬШЕ , чем то которое загадала программа ");
+                System.out.println("Неправильно! Число " + a +", которое вы указали МЕНЬШЕ , чем то которое загадала программа ");
             } else if (a > x) {
-                System.out.println("Неправильно число кторое вы указали БОЛЬШЕ  , чем то, которое загадала программа ");
+                System.out.println("Неправильно число " + a + ", которое вы указали БОЛЬШЕ  , чем то, которое загадала программа ");
             }
 
 
