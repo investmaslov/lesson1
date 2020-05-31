@@ -1,5 +1,7 @@
 package lesson1;
 
+import com.sun.tools.corba.se.idl.StructEntry;
+
 import java.util.Scanner;
 import java.util.Random;
 
@@ -24,28 +26,28 @@ public class HomeWork3 {
         System.out.println("Я загадал число от 0 до 9 угадай какое ? У тебя есть три попытки ");
         Random rand = new Random();
         int x = rand.nextInt(9);
-
-     //   System.out.println("Программа загадала число - " + x);
+        System.out.println("Программа загадала число - " + x);
         System.out.println("   ");
 
-        System.out.println("Введите свое число ");
 
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int cointer = 0;
-        while (cointer<3 || a < x || a > x || a != x) {
-            cointer ++;
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Введите свое число ");
+            Scanner sc = new Scanner(System.in);
+            int a = sc.nextInt();
+
+
             if (a == x) {
                 System.out.println(" Ура ты угадал программа загадала " + x + " " + "Твой результат такой же -  " + a);
+                break;
             } else if (a < x) {
-                System.out.println("Неправильно число кторое вы указали МЕНЬШЕ , чем то которое загадала программа " );
+                System.out.println("Неправильно число кторое вы указали МЕНЬШЕ , чем то которое загадала программа ");
             } else if (a > x) {
+
                 System.out.println("Неправильно число кторое вы указали БОЛЬШЕ  , чем то, которое загадала программа ");
 
             }
-            continue;
-
         }
+
     }
 
 
