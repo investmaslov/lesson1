@@ -25,7 +25,7 @@ public class HomeWork3 {
         Random rand = new Random();
         int x = rand.nextInt(9);
 
-        System.out.println("Программа загадала число - " + x);
+     //   System.out.println("Программа загадала число - " + x);
         System.out.println("   ");
 
         System.out.println("Введите свое число ");
@@ -34,7 +34,7 @@ public class HomeWork3 {
         int a = sc.nextInt();
         int cointer = 0;
         while (cointer<3 || a < x || a > x || a != x) {
-
+            cointer ++;
             if (a == x) {
                 System.out.println(" Ура ты угадал программа загадала " + x + " " + "Твой результат такой же -  " + a);
             } else if (a < x) {
@@ -43,7 +43,8 @@ public class HomeWork3 {
                 System.out.println("Неправильно число кторое вы указали БОЛЬШЕ  , чем то, которое загадала программа ");
 
             }
-            cointer ++;
+            continue;
+
         }
     }
 
