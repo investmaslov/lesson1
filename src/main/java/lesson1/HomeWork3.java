@@ -33,7 +33,7 @@ public class HomeWork3 {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int cointer = 0;
-        do {
+        while (cointer<3 || a < x || a > x || a != x) {
             cointer ++;
             if (a == x) {
                 System.out.println(" Ура ты угадал программа загадала " + x + " " + "Твой результат такой же -  " + a);
@@ -44,8 +44,7 @@ public class HomeWork3 {
 
             }
             break;
-        } while (cointer<3) ;
-
+        }
     }
 
 
