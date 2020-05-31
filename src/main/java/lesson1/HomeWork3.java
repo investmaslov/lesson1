@@ -26,7 +26,7 @@ public class HomeWork3 {
         System.out.println("Я загадал число от 0 до 9 угадай какое ? У тебя есть три попытки ");
         Random rand = new Random();
         int x = rand.nextInt(9);
-    //    System.out.println("Программа загадала число - " + x);
+     //   System.out.println("Программа загадала число - " + x);
         System.out.println("   ");
         for (int i = 0; i < 3; i++) {
             System.out.println("Введите свое число ");
@@ -40,8 +40,11 @@ public class HomeWork3 {
             } else if (a > x) {
                 System.out.println("Неправильно число кторое вы указали БОЛЬШЕ  , чем то, которое загадала программа ");
             }
+
+
+
         }
-        System.out.println("  ");
+        System.out.println();
     }
 
 
