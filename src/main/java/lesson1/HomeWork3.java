@@ -46,6 +46,18 @@ public class HomeWork3 {
                 System.out.println("Неправильно число кторое вы указали БОЛЬШЕ  , чем то, которое загадала программа ");
 
             }
+            sc.close();
+        }
+
+
+        System.out.println("Повторить игру еще раз? 1 – да / 0 – нет»(1 – повторить, 0 – нет");
+        System.out.println("Введите ответ ");
+        Scanner sc = new Scanner(System.in);
+        int operation = sc.nextInt();
+        if (operation == 1 ) {
+
+        } else if (operation == 0){
+
         }
 
     }
