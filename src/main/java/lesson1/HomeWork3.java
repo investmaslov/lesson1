@@ -26,7 +26,7 @@ public class HomeWork3 {
 
 
     public static void start() {
-        System.out.println("Вы ввели некорректный ответ! Выберите правильный ответ! Спасибо!");
+
         newStartRandomGame();
     }
 
@@ -76,7 +76,7 @@ public class HomeWork3 {
         } else if (b == 0) {
             System.out.println("Игра закончена благодарим за игру!");
         } else if (b < 1) {
-
+            System.out.println("Вы ввели некорректный ответ! Выберите правильный ответ! Спасибо!");
             start();
         }
 
