@@ -35,7 +35,7 @@ public class HomeWork3 {
         do {
             System.out.println("Компьютер загадал случайное число");
             int xRanodom = rand.nextInt(9);
-            System.out.println(xRanodom);
+
             boolean isWin = false;
 
             for (int current = 1; current <= tryCount; current++) {
