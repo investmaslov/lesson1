@@ -1,7 +1,6 @@
 package lesson1;
 
 
-
 import java.util.Scanner;
 import java.util.Random;
 
@@ -10,7 +9,6 @@ public class HomeWork3 {
 
 
         randomGame();
-
 
     }
 
@@ -34,7 +32,7 @@ public class HomeWork3 {
 
         do {
             System.out.println("Компьютер загадал случайное число");
-            int xRanodom = rand.nextInt(9);
+            int xRanodom = rand.nextInt(10);
 
             boolean isWin = false;
 
@@ -46,16 +44,20 @@ public class HomeWork3 {
                 } else if (userOption > xRanodom) {
                     System.out.println("Неправильно! Число " + userOption + " БОЛЬШЕ  , чем то, которое загадала программа ");
                 } else {
-                    System.out.println(" ВЕРНО Твой результат" + userOption + "такой же - ");
+                    System.out.println(" ВЕРНО Твой результат" + userOption + "такой же -  " + xRanodom);
                     isWin = true;
                     break;
                 }
             }
-
             System.out.println(isWin ? "Вы победили!" : "Вы проиграли. правильное число" + xRanodom);
             System.out.println("Повторить игру - 1 / Закончить игру - 0 ");
             repeat = sc.nextInt();
             if (repeat == 0) break;
+            else if (repeat != 0 || repeat != 1) {
+                System.out.println("Вы ввели неправильное значение");
+                System.out.println("Введите правильное значение");
+                System.out.println("Повторить игру - 1 / Закончить игру - 0 ");
+            }
 
         } while (repeat == 1);
 
