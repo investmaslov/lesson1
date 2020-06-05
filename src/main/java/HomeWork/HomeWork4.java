@@ -5,14 +5,15 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class HomeWork4 {
-    public static char[][] map;
-    public static final int SIZE = 3;
-    public static final int DOTS_TO_WIN = 3;
+    public static int SIZE = 3;
+    public static int DOTS_TO_WIN = 3;
     public static final char DOT_EMPTY = '•';
     public static final char DOT_X = 'X';
     public static final char DOT_O = 'O';
+    public static char[][] map;
     public static Scanner sc = new Scanner(System.in);
     public static Random rand = new Random();
+
 
     public static void main(String[] args) {
         initMap();
@@ -34,13 +35,14 @@ public class HomeWork4 {
                 System.out.println("Победил Искуственный Интеллект");
                 break;
             }
-            if (isMapFull()) {
+            if (isMapFull() ){
                 System.out.println("Ничья");
                 break;
             }
         }
         System.out.println("Игра закончена");
     }
+
 
     public static boolean checkWin(char symb) {
         if (map[0][0] == symb && map[0][1] == symb && map[0][2] == symb) return true;
