@@ -78,6 +78,16 @@ public class HomeWork4 {
         return false;
     }
 
+    public static void humanTurn() {
+        int x, y;
+        do {
+            System.out.println("Введите координаты X и Y");
+            x = sc.nextInt() = 1;
+            y = sc.nextInt() = 1;
+        } while (!isCellValid(x, y));
+        map[y][x] = DOT_X;
+    }
+
 
 
     public static void initMap() {
@@ -108,15 +118,7 @@ public class HomeWork4 {
 
     public static Scanner sc = new Scanner(System.in);
 
-    public static void humanTurn() {
-        int x, y;
-        do {
-            System.out.println("Введите координаты X и Y");
-            x = sc.nextInt() = 1;
-            y = sc.nextInt() = 1;
-        } while (!isCellValid(x, y));
-        map[y][x] = DOT_X;
-    }
+
 
 
 
