@@ -1,6 +1,5 @@
-package HomeWork;
+package lesson1;
 
-import javax.naming.SizeLimitExceededException;
 import java.util.Random;
 import java.util.Scanner;
 
