@@ -72,23 +72,23 @@ public class HomeWork4 {
         System.out.println("Компьютер походил в точку " + (x + 1) + " " + (y + 1));
         map[x][y] = DOT_O;
     }
-    public static boolean isCellValid(int x, int y) {
-        if (x < 0 || x >= SIZE || y < 0 || y >= SIZE) return false;
-        if (map[y][x] == DOT_EMPTY) return true;
-        return false;
-    }
+
 
     public static void humanTurn() {
         int x, y;
         do {
             System.out.println("Введите координаты X и Y");
-            x = sc.nextInt() = 1;
-            y = sc.nextInt() = 1;
+            x = sc.nextInt() - 1;
+            y = sc.nextInt() - 1;
         } while (!isCellValid(x, y));
         map[y][x] = DOT_X;
     }
 
-
+    public static boolean isCellValid(int x, int y) {
+        if (x < 0 || x >= SIZE || y < 0 || y >= SIZE) return false;
+        if (map[y][x] == DOT_EMPTY) return true;
+        return false;
+    }
 
     public static void initMap() {
         map = new char[SIZE][SIZE];
@@ -98,7 +98,6 @@ public class HomeWork4 {
             }
         }
     }
-
 
     public static void printMap() {
         for (int i = 0; i <= SIZE; i++) {
@@ -114,13 +113,6 @@ public class HomeWork4 {
         }
         System.out.println();
     }
-
-
-    public static Scanner sc = new Scanner(System.in);
-
-
-
-
 
 }
 
