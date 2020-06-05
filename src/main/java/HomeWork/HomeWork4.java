@@ -72,6 +72,13 @@ public class HomeWork4 {
         System.out.println("Компьютер походил в точку " + (x + 1) + " " + (y + 1));
         map[x][y] = DOT_O;
     }
+    public static boolean isCellValid(int x, int y) {
+        if (x < 0 || x >= SIZE || y < 0 || y >= SIZE) return false;
+        if (map[y][x] == DOT_EMPTY) return true;
+        return false;
+    }
+
+
 
     public static void initMap() {
         map = new char[SIZE][SIZE];
@@ -111,11 +118,7 @@ public class HomeWork4 {
         map[y][x] = DOT_X;
     }
 
-    public static boolean isCellValid(int x, int y) {
-        if (x < 0 || x >= SIZE || y < 0 || y >= SIZE) return false;
-        if (map[y][x] == DOT_EMPTY) return true;
-        return false;
-    }
+
 
 }
 
