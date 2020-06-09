@@ -21,42 +21,29 @@ public class Employee {
         return fullName;
     }
 
-
-
     public int getAge() {
         return age;
     }
-
-
 
     public String getPosition() {
         return position;
     }
 
-
-
     public int getSalary() {
         return salary;
     }
 
-
-
     public String getEmail() {
         return email;
     }
-
-
 
     public long getPhone() {
         return phone;
     }
 
 
-
-
-
     public void info() {
-        System.out.print("ФИО сотрудника: " + getFullName() + "\n"+
+        System.out.print("ФИО сотрудника: " + getFullName() + "\n" +
                 "Возраст: " + getAge() + "\n" +
                 "Должность " + getPosition() + " \n" +
                 "Зарплата: " + getSalary() + "\n" +
