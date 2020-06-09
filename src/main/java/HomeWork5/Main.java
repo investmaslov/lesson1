@@ -14,13 +14,8 @@ public class Main {
         employee[4] = new Employee("Котов Владимир Николаевич ", 56, "Програмист ", 80000, "programer@gmail.com", 89058964444l);
 
 
-//        employee[0].info();
-//        employee[1].info();
-//        employee[2].info();
-//        employee[3].info();
-//        employee[4].info();
 
-        // если у объекта в ячейке i поле age > 40, то у него вызывается метод print()
+        // если у объекта в ячейке i поле age > 40, то у него вызывается метод info()
         for (int i=0; i < employee.length; i++)
             if (employee[i].getAge() > 40) employee[i].info();
     }
